@@ -13,6 +13,14 @@ body {
 	align-items: center;
 }
 
+.green{
+	color: green;
+}
+
+.red{
+	color: red;
+}
+
 h1 {
 	font-size: 2rem;
 	vertical-align: middle;
