@@ -1,10 +1,10 @@
 function changeColor() {
     const p = document.getElementById("text");
 
-    if (p.style.color != "green") {
-        p.style.color = "green";
+    if (p.classList != "red") {
+        p.classList.add("red");
     }
     else {
-        p.style.color = "red";
+        p.classList.replace("red", "green")
     }
 }

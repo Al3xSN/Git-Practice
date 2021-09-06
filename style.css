@@ -13,6 +13,15 @@ body {
 	align-items: center;
 }
 
+.green{
+	color: green;
+}
+
+.red{
+	color: red;
+}
+
+/* add class green, add class red, add js-adding,removing,toggle */
 h1 {
 	font-size: 2rem;
 	vertical-align: middle;
