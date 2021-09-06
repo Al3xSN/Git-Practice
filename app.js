@@ -1,7 +1,7 @@
 function changeColor() {
     const p = document.getElementById("text");
 
-    if (p.classList != "green") {
+    if (!p.classList.contains("green")) {
         p.classList.remove("red");
         p.classList.add("green");
     }
