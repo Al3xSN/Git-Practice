@@ -1,8 +1,10 @@
 function changeColor() {
-    if (document.getElementById("text").style.color != "green") {
-        document.getElementById("text").style.color = "green";
+    const p = document.getElementById("text");
+
+    if (p.style.color != "green") {
+        p.style.color = "green";
     }
     else {
-        document.getElementById("text").style.color = "red";
+        p.style.color = "red";
     }
 }
