@@ -7,23 +7,25 @@
 
 body {
 	height: 100vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 }
 
-.green{
+.green {
 	color: green;
 }
 
-.red{
+.red {
 	color: red;
 }
 
 h1 {
 	font-size: 2rem;
-	vertical-align: middle;
+	text-align: center;
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 button {
@@ -33,5 +35,4 @@ button {
 	margin-left: 25px;
 	padding: 4px;
 	font-size: 15px;
-	text-align: center;
 }
