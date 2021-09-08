@@ -6,10 +6,15 @@
 }
 
 header,
+section,
+footer {
+	border-radius: 15px;
+}
+
+header,
 footer {
 	color: white;
 	width: 98%;
-	border-radius: 15px;
 	margin: 5px auto 10px auto;
 	display: flex;
 	justify-content: center;
@@ -18,6 +23,10 @@ footer {
 
 header {
 	background-color: red;
+}
+
+.home {
+	display: flex;
 }
 
 .home-slidebar {
@@ -38,57 +47,33 @@ footer {
 
 /* MOBILE */
 @media (max-width: 600px) {
+	.home {
+		flex-direction: column;
+	}
+
 	.home-slidebar,
 	.home-article {
-		width: 98%;
-		border-radius: 15px;
-		margin: 5px auto 10px auto;
-		display: flex;
-		justify-content: center;
 		padding-bottom: 25px;
-	}
-
-	.home-slidebar {
 		width: 95%;
-	}
-
-	.home-article {
-		width: 95%;
+		margin: 5px auto;
 	}
 }
 
 /* TABLET */
-@media (min-width: 600px) {
+@media (min-width: 601px) {
 	.home {
+		flex-direction: row;
 		height: 80vh;
-		display: flex;
-		max-width: 95%;
+		width: 95%;
 		margin: 0 auto;
 		justify-content: space-between;
 	}
 
 	.home-article {
-		text-align: center;
-		border-radius: 15px;
 		width: 70%;
-		padding: 0 10px;
 	}
 
 	.home-slidebar {
-		padding: 0 10px;
-		border-radius: 15px;
-	}
-}
-
-/* DESKTOP */
-@media (min-width: 768px) {
-	.home-article {
-		border-radius: 20px;
-		width: 75%;
-	}
-
-	.home-slidebar {
-		border-radius: 20px;
-		width: 18%;
+		width: 25%;
 	}
 }
