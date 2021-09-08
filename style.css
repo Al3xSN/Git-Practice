@@ -5,41 +5,90 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+header,
+footer {
+	color: white;
+	width: 98%;
+	border-radius: 15px;
+	margin: 5px auto 10px auto;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+
+header {
+	background-color: red;
+}
+
+.home-slidebar {
+	text-align: center;
+	color: white;
+	background-color: green;
+}
+
+.home-article {
+	text-align: center;
+	color: black;
+	background-color: yellow;
+}
+
+footer {
+	background-color: blue;
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
-	header,
-	section,
-	footer {
-		color: white;
+	.home-slidebar,
+	.home-article {
 		width: 98%;
 		border-radius: 15px;
 		margin: 5px auto 10px auto;
 		display: flex;
 		justify-content: center;
-		padding-bottom: 20px;
-	}
-
-	header {
-		align-items: center;
-		background-color: red;
+		padding-bottom: 25px;
 	}
 
 	.home-slidebar {
 		width: 95%;
-		background-color: green;
 	}
 
 	.home-article {
 		width: 95%;
-		color: black;
-		background-color: yellow;
-		text-align: center;
-	}
-
-	footer {
-		background-color: blue;
 	}
 }
+
 /* TABLET */
 @media (min-width: 600px) {
+	.home {
+		height: 80vh;
+		display: flex;
+		max-width: 95%;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+
+	.home-article {
+		text-align: center;
+		border-radius: 15px;
+		width: 70%;
+		padding: 0 10px;
+	}
+
+	.home-slidebar {
+		padding: 0 10px;
+		border-radius: 15px;
+	}
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+	.home-article {
+		border-radius: 20px;
+		width: 75%;
+	}
+
+	.home-slidebar {
+		border-radius: 20px;
+		width: 18%;
+	}
 }
