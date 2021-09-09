@@ -5,23 +5,23 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header,
-section,
+main,
+aside,
+article,
 footer {
 	border-radius: 15px;
+	text-align: center;
 }
 
-header,
+main,
 footer {
 	color: white;
 	width: 98%;
-	margin: 5px auto 10px auto;
-	display: flex;
-	justify-content: center;
+	margin: 5px auto 10px;
 	padding-bottom: 25px;
 }
 
-header {
+main {
 	background-color: red;
 }
 
@@ -29,14 +29,12 @@ header {
 	display: flex;
 }
 
-.home-slidebar {
-	text-align: center;
+aside {
 	color: white;
 	background-color: green;
 }
 
-.home-article {
-	text-align: center;
+article {
 	color: black;
 	background-color: yellow;
 }
@@ -46,13 +44,13 @@ footer {
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
+@media (min-width: 200px) {
 	.home {
 		flex-direction: column;
 	}
 
-	.home-slidebar,
-	.home-article {
+	aside,
+	article {
 		padding-bottom: 25px;
 		width: 95%;
 		margin: 5px auto;
@@ -60,7 +58,7 @@ footer {
 }
 
 /* TABLET */
-@media (min-width: 601px) {
+@media (min-width: 600px) {
 	.home {
 		flex-direction: row;
 		height: 80vh;
@@ -69,11 +67,11 @@ footer {
 		justify-content: space-between;
 	}
 
-	.home-article {
+	article {
 		width: 70%;
 	}
 
-	.home-slidebar {
+	aside {
 		width: 25%;
 	}
 }
