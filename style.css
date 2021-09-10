@@ -5,33 +5,73 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.green {
-	color: green;
-}
-
-.red {
-	color: red;
-}
-
-h1 {
-	font-size: 2rem;
+main,
+aside,
+article,
+footer {
+	border-radius: 15px;
 	text-align: center;
 }
 
-.centered {
-	width: 50%;
-	margin: 0 25%;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	align-items: center;
+main,
+footer {
+	color: white;
+	width: 98%;
+	margin: 5px auto 10px;
+	padding-bottom: 25px;
 }
 
-button {
-	border: 1px solid black;
-	border-radius: 10px;
-	background-color: transparent;
-	margin: 15px;
-	padding: 4px;
-	font-size: 15px;
+main {
+	background-color: red;
+}
+
+.home {
+	display: flex;
+}
+
+aside {
+	color: white;
+	background-color: green;
+}
+
+article {
+	color: black;
+	background-color: yellow;
+}
+
+footer {
+	background-color: blue;
+}
+
+/* MOBILE */
+@media (min-width: 200px) {
+	.home {
+		flex-direction: column;
+	}
+
+	aside,
+	article {
+		padding-bottom: 25px;
+		width: 95%;
+		margin: 5px auto;
+	}
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+	.home {
+		flex-direction: row;
+		height: 80vh;
+		width: 95%;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+
+	article {
+		width: 70%;
+	}
+
+	aside {
+		width: 25%;
+	}
 }
