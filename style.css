@@ -5,7 +5,37 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main,
+nav {
+	margin: 5px auto 10px;
+	color: white;
+	background: red;
+	border-radius: 15px;
+	padding: 5px 0;
+}
+
+nav .logo {
+	margin-left: 15px;
+}
+
+nav ul li {
+	margin: auto 0;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	float: left;
+	margin-left: 30px;
+}
+
+li:last-child {
+	margin-right: 30px;
+}
+
+ul li a:hover {
+	color: white;
+}
+
 aside,
 article,
 footer {
@@ -13,7 +43,6 @@ footer {
 	text-align: center;
 }
 
-main,
 footer {
 	color: white;
 	width: 98%;
@@ -45,6 +74,11 @@ footer {
 
 /* MOBILE */
 @media (min-width: 200px) {
+	nav ul {
+		list-style: none;
+		margin-bottom: 0;
+	}
+
 	.home {
 		flex-direction: column;
 	}
