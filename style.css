@@ -5,6 +5,35 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.mobile-nav {
+	display: block;
+}
+
+.mobile-nav ul {
+	padding: 0;
+	border: 1px solid;
+	border-radius: 30px;
+	width: 50%;
+	margin: 0 auto 20px;
+	background: rgb(54, 54, 54);
+}
+
+.mobile-nav ul li {
+	list-style: none;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.mobile-nav ul li a {
+	color: white;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.mobile-nav {
+	display: none;
+}
+
 nav {
 	margin: 5px auto 10px;
 	color: white;
@@ -20,11 +49,16 @@ nav .logo {
 	margin-left: 15px;
 }
 
+nav ul li button {
+	width: 40px;
+	height: auto;
+}
+
 nav ul li {
 	margin: auto 0;
 }
 
-ul li a {
+nav ul li a {
 	text-decoration: none;
 	color: white;
 	float: left;
@@ -53,10 +87,6 @@ footer {
 	padding-bottom: 25px;
 }
 
-main {
-	background-color: red;
-}
-
 .home {
 	display: flex;
 }
@@ -77,9 +107,8 @@ footer {
 
 /* MOBILE */
 @media (min-width: 200px) {
-	nav ul {
-		list-style: none;
-		margin-bottom: 0;
+	nav ul li a {
+		display: none;
 	}
 
 	.home {
@@ -96,6 +125,14 @@ footer {
 
 /* TABLET */
 @media (min-width: 600px) {
+	nav ul li button {
+		display: none;
+	}
+
+	nav ul li a {
+		display: flex;
+	}
+
 	.home {
 		flex-direction: row;
 		height: 80vh;
