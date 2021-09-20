@@ -5,14 +5,6 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.active {
-	display: block;
-}
-
-.disable {
-	display: none;
-}
-
 .mobile-nav ul {
 	padding: 0;
 	border: 1px solid;
@@ -107,6 +99,7 @@ footer {
 
 /* MOBILE */
 @media (min-width: 200px) {
+	.disable,
 	nav ul li a {
 		display: none;
 	}
@@ -125,6 +118,10 @@ footer {
 
 /* TABLET */
 @media (min-width: 600px) {
+	.mobile-nav {
+		display: none;
+	}
+
 	nav ul li button {
 		display: none;
 	}
